@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 06-27-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-file-upload 
+      label="Attach receipt" 
+      data-id="fileData" 
+      name="fileUploader" 
+      accept={acceptedFormats} 
+      record-id={myRecordId}
+      onuploadfinished={handleUploadFinished} 
+      multiple>
+    </lightning-file-upload>
+    <p class="content"></p>
+</template>

@@ -1,0 +1,30 @@
+<template>
+    <template if:true={renderData}>
+        <lightning-datatable
+            key-field="id"
+            data={Accdata}
+            columns={columns}>
+        </lightning-datatable>
+        <br/>
+        <br/>
+        <lightning-datatable
+            key-field="id"
+            data={Accounts}
+            columns={columnsAccount}>
+        </lightning-datatable>
+        <br/>
+        <br/>
+        <lightning-datatable
+            key-field="id"
+            data={lead}
+            columns={columnsLead}>
+        </lightning-datatable>
+        <br/>
+        <br/>
+        <lightning-datatable
+            key-field="id"
+            data={beer}
+            columns={columnsBeer}>
+        </lightning-datatable>
+    </template>
+</template>
