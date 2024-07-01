@@ -8,7 +8,7 @@ global with sharing class AccountManager
         String AccountId= request.requestURI.substring(   request.requestURI.lastIndexOf('/')+1);
         system.debug(AccountId);
         Account result1 =  [SELECT Id,Name FROM Account WHERE Id = :AccountId];               
-        return result1;
+        return result1; //This is for testing purpose
    }
  
 }
